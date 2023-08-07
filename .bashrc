@@ -24,9 +24,9 @@ alias swayconf='micro ~/.config/sway/config'
 
 
 # Load into sway by defalt after login
-#if [ "$(tty)" = "/dev/tty1" ]; then
-#   exec dbus-run-session sway
-#fi
+if [ "$(tty)" = "/dev/tty1" ]; then
+   exec dbus-run-session sway
+fi
 
 # Case-insensitive terminal
 bind -s 'set completion-ignore-case on'
