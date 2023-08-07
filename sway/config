@@ -9,10 +9,11 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
+# set $left h
+# set $down j
+# set $up k
+# set $right l
+
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
@@ -88,10 +89,10 @@ output * bg /home/elias/Pictures/walls/kriegs_2021_November_4K_3840x2160.jpg fil
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+#   bindsym $mod+$left focus left
+#   bindsym $mod+$down focus down
+#   bindsym $mod+$up focus up
+#   bindsym $mod+$right focus right
     # Or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
@@ -99,10 +100,10 @@ output * bg /home/elias/Pictures/walls/kriegs_2021_November_4K_3840x2160.jpg fil
     bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+#   bindsym $mod+Shift+$left move left
+#   bindsym $mod+Shift+$down move down
+#   bindsym $mod+Shift+$up move up
+#   bindsym $mod+Shift+$right move right
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -180,10 +181,10 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    # bindsym $left resize shrink width 10px
+    # bindsym $down resize grow height 10px
+    # bindsym $up resize shrink height 10px
+    # bindsym $right resize grow width 10px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
@@ -215,7 +216,10 @@ bindsym $mod+r mode "resize"
     #}
 #}
 
-# OWN NEW MODIFICATIONS
+
+####################
+# OWN MODIFICATIONS#
+####################
 
 # Set keyboard layout
 input * {
@@ -261,5 +265,31 @@ client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
 # Fix slow start on Firefox
 exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+
+# Configure swaylock-effects
+set $lock swaylock \
+	--screenshots \
+	--clock \
+	--indicator \
+	--indicator-radius 100 \
+	--indicator-thickness 7 \
+	--effect-blur 7x5 \
+	--effect-vignette 0.5:0.5 \
+	--ring-color bb00cc \
+	--key-hl-color 880033 \
+	--line-color 00000000 \
+	--inside-color 00000088 \
+	--separator-color 00000000 \
+	--grace 2 \
+	--fade-in 0.2
+exec swayidle -w \
+    timeout 600 $lock \
+    timeout 570 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep $lock
+
+set $lockman exec bash ~/.config/sway/lockman.sh
+bindsym $mod+l exec $lockman
+
 
 include /etc/sway/config.d/*
