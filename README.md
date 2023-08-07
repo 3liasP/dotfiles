@@ -2,7 +2,7 @@
 
 Welcome to my personal dotfiles repository! This collection stores my personal configuration, particularly on Arch Linux with the Sway tiling window manager / compositor. However, these dotfiles might be compatible with other Linux distributions and tiling managers like i3, so you can adapt them to suit your preferences and system setup.
 
-![Preview](.preview/preview.png)
+![Preview](./preview/preview.png)
 
 ## Table of Contents
 
