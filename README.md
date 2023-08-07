@@ -52,19 +52,12 @@ To install these dotfiles on your system, follow these steps:
    cd ~/dotfiles
    ```
 
-3. Review and modify the configuration files as needed. Feel free to personalize settings to match your preferences and hardware.
+3. Review and modify the configuration files as needed. Feel free to personalize settings to match your preferences and hardware. You can add the files under `.config` to deploy them, for example.
 
-4. Run the installation script to deploy the dotfiles:
-
-   ```bash
-   ./install.sh
-   ```
-
-This script will create symbolic links to the configuration files in your home directory, effectively applying your desired settings.
 
 ## Usage
 
-Once the dotfiles are installed, you can immediately start using your newly configured environment. Launch your tiling window manager (Sway or i3) and explore the loooks and functionality. Be sure to refer to the documentation for your chosen tiling manager to make the most of its features.
+Once the dotfiles are installed, you can immediately start using your newly configured environment. Launch your tiling window manager (Sway or i3) and explore the looks and functionality. Be sure to refer to the documentation for your chosen tiling manager to make the most of its features.
 
 ## Customization
 
