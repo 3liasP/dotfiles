@@ -18,7 +18,7 @@ Welcome to my personal dotfiles repository! This collection stores my personal c
 
 ## About
 
-This repository contains a collection of configuration files and scripts that reflect my personal workflow and customization preferences, inlcuding some thememing.
+This repository contains a collection of configuration files and scripts that reflect my personal workflow and customization preferences, including some theming.
 
 ## Features
 
