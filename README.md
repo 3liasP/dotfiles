@@ -62,17 +62,23 @@ Once the dotfiles are installed, you can immediately start using your newly conf
 
 You can use the `copy_config.sh` script to copy matching configuration files and folders from your ~/.config directory to the repository itself, if you want fork this repo.
 
-Open a terminal and navigate to cloned  repository directory:
+Open a terminal and navigate to cloned repository directory:
 
-`$ cd dotfiles`
+```bash
+$ cd dotfiles
+```
 
 Make the script executable, if not done already:
 
-`$ chmod +x copy_config.sh`
+```bash
+$ chmod +x copy_config.sh
+```
 
 Run the script:
 
-`./copy_config.sh`
+```bash
+./copy_config.sh
+```
 
 This script will copy the specified configuration files and folders from ~/.config to your dotfiles repository.
 
@@ -82,14 +88,12 @@ Feel free to customize these dotfiles to better align with your workflow and aes
 
 ## Contributing
 
-Contributions are welcome! If you find a bug, have an enhancement, or want to propose a change, please open an issue or submit a pull request. Your input helps improve this collection of dotfiles for everyone.
+Contributions are welcome! If you find a bug, have an enhancement, or want to propose a change, please open an issue or submit a pull request.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and distribute the dotfiles as you see fit. Attribution is appreciated but not required.
 
 ---
-
-Enjoy your personalized Linux experience with these dotfiles. If you have any questions or suggestions, please don't hesitate to get in touch!
 
 *Disclaimer: Use these dotfiles at your own risk. I am not responsible for any damage or issues that may arise from their usage.*
