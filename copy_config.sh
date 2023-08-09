@@ -22,4 +22,7 @@ done
 echo "Copying alacritty.yml ..."
 cp ~/.config/alacritty/alacritty.yml "$repo_dir/alacritty"
 
+echo "Copying .bashrc"
+cp ~/.bashrc "$repo_dir
+"
 echo "Configuration files copied to the dotfiles repository."
