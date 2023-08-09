@@ -65,13 +65,13 @@ You can use the `copy_config.sh` script to copy matching configuration files and
 Open a terminal and navigate to cloned repository directory:
 
 ```bash
-$ cd dotfiles
+cd dotfiles
 ```
 
 Make the script executable, if not done already:
 
 ```bash
-$ chmod +x copy_config.sh
+chmod +x copy_config.sh
 ```
 
 Run the script:
