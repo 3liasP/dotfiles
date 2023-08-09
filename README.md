@@ -54,10 +54,27 @@ To install these dotfiles on your system, follow these steps:
 
 3. Review and modify the configuration files as needed. Feel free to personalize settings to match your preferences and hardware. You can add the files under `.config` to deploy them, for example.
 
-
 ## Usage
 
 Once the dotfiles are installed, you can immediately start using your newly configured environment. Launch your tiling window manager (Sway or i3) and explore the looks and functionality. Be sure to refer to the documentation for your chosen tiling manager to make the most of its features.
+
+### Copying Configuration Files
+
+You can use the `copy_config.sh` script to copy matching configuration files and folders from your ~/.config directory to the repository itself, if you want fork this repo.
+
+Open a terminal and navigate to cloned  repository directory:
+
+`$ cd dotfiles`
+
+Make the script executable, if not done already:
+
+`$ chmod +x copy_config.sh`
+
+Run the script:
+
+`./copy_config.sh`
+
+This script will copy the specified configuration files and folders from ~/.config to your dotfiles repository.
 
 ## Customization
 
