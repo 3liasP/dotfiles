@@ -5,7 +5,7 @@ repo_dir=~/Development/personal/dotfiles
 
 # List of folders to copy
 # Edit this to match the needed files
-folders=("gammastep" "gtk-3.0" "waybar")
+folders=("gammastep" "gtk-3.0" "waybar" "wofi")
 
 # Loop through the list of folders
 for folder in "${folders[@]}"; do
